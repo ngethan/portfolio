@@ -103,14 +103,14 @@ const Work = () => {
     return (
         <motion.div
             id="work"
-            className="py-[100px] mb-[100px] text-gray-200 w-full h-[500px] max-w-[850px] mx-auto px-4 flex flex-col"
+            className="py-[100px] mb-[100px] w-full h-[500px] max-w-[850px] mx-auto px-4 flex flex-col"
             initial="hidden"
             animate={controls}
             variants={list}
             ref={ref}
         >
             <motion.div
-                className="name text-7xl sm:text-8xl flex text-gray-100 font-bold"
+                className="name text-7xl sm:text-8xl flex font-bold"
                 variants={itemY}
             >
                 <h1>
@@ -118,7 +118,7 @@ const Work = () => {
                         (letter, index) => {
                             return (
                                 <span
-                                    className="text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
+                                    className="transparent-text text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
                                     key={index}
                                 >
                                     {letter}

@@ -8,7 +8,6 @@ import Home from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
-import Stars from "@/components/Stars";
 import Work from "@/components/Work/Work";
 
 const Index = () => {
@@ -61,7 +60,6 @@ const Index = () => {
                 />
             </Head>
             <Cursor />
-            <Stars />
             <Navbar />
             <Home />
             <About />

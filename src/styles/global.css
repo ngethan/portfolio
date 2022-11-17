@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -12,8 +13,8 @@
     body {
         margin: 0;
         padding: 0;
-        background-color: theme("colors.gray.800");
-        @apply font-[Inter];
+        background-color: theme("colors.gray.100");
+        @apply font-[Montserrat];
     }
 
     body::-webkit-scrollbar {
@@ -79,9 +80,18 @@
         transition: 0.3s, background-position 0s 0.3s;
     }
     .hover-animation-dark:hover {
-        --d: 100%;
-        --p: 100%;
+      --d: 100%;
+      --p: 100%;
     }
+    .nav-sup {
+      background: linear-gradient(theme("colors.red.400") 0 0) var(--p, 0) 100% / var(--d, 0) 1px no-repeat !important;
+      transition: 0.3s, background-position 0s 0.3s;
+    }
+    .hover-animation-dark:hover ~ .nav-sup {
+      --d: 100%;
+      --p: 100%
+    }
+   
 
     .box-shadow {
         -webkit-box-shadow: 0 10px 30px -10px theme("colors.gray.900");
@@ -130,7 +140,7 @@
     }
 
     .input {
-        background: linear-gradient(to right, theme("colors.gray.100"), theme("colors.gray.100")),
+        background: linear-gradient(to right, theme("colors.gray.900"), theme("colors.gray.900")),
             linear-gradient(to right, theme("colors.red.500"), theme("colors.red.500"), theme("colors.red.500"));
         background-size: 100% 0.1em, 0 0.1em;
         background-position: 100% 100%, 0 100%;
@@ -162,5 +172,20 @@
 
     .fade-in-out {
         animation: fade-in-out 5s both infinite;
+    }
+
+    .transparent-text {
+      color: #fff;
+      text-shadow:
+      -1px -1px 0 #000,
+       0   -1px 0 #000,
+       1px -1px 0 #000,
+       1px  0   0 #000,
+       1px  1px 0 #000,
+       0    1px 0 #000,
+      -1px  1px 0 #000,
+      -1px  0   0 #000;
+      -webkit-font-smoothing: antialiased;
+      transition: .3s;
     }
 }

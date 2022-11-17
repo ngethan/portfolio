@@ -64,14 +64,14 @@ const Skills = () => {
             ref={ref}
         >
             <motion.div
-                className="name text-7xl sm:text-8xl flex text-gray-100 font-bold"
+                className="name text-7xl sm:text-8xl flex font-bold"
                 variants={itemY}
             >
                 <h1>
                     {["S", "k", "i", "l", "l", "s"].map((letter, index) => {
                         return (
                             <span
-                                className="text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
+                                className="transparent-text text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
                                 key={index}
                             >
                                 {letter}

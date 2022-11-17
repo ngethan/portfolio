@@ -95,7 +95,7 @@ const WorkInfo = ({ work, md }: Props) => {
             <motion.div variants={itemY}>
                 <motion.p
                     id="title"
-                    className="inline text-[24px] text-gray-100 font-bold mb-1"
+                    className="inline text-[24px] font-bold mb-1"
                 >
                     {data!.title}
                 </motion.p>
@@ -112,7 +112,7 @@ const WorkInfo = ({ work, md }: Props) => {
             </motion.div>
             <motion.p
                 id="duration"
-                className="font-code text-[20px] text-gray-200 mb-4"
+                className="font-code text-[20px] mb-4"
                 variants={itemY}
             >
                 {data!.duration}

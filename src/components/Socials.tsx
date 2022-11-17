@@ -11,7 +11,7 @@ const Socials = () => {
                     aria-label="GitHub"
                 >
                     <FiGithub
-                        className="text-gray-200 duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
+                        className="duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
                         size={25}
                     />
                 </a>
@@ -24,7 +24,7 @@ const Socials = () => {
                     aria-label="Linkedin"
                 >
                     <FiLinkedin
-                        className="text-gray-200 duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
+                        className="duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
                         size={25}
                     />
                 </a>
@@ -37,7 +37,7 @@ const Socials = () => {
                     aria-label="Instagram"
                 >
                     <FiInstagram
-                        className="text-gray-200 duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
+                        className="duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
                         size={25}
                     />
                 </a>
@@ -50,7 +50,7 @@ const Socials = () => {
                     aria-label="CodePen"
                 >
                     <FiTwitter
-                        className="text-gray-200 duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
+                        className="duration-300 group-hover:text-red-500 group-hover:translate-y-[-5px]"
                         size={25}
                     />
                 </a>

@@ -38,21 +38,21 @@ const About = () => {
     return (
         <motion.div
             id="about"
-            className="py-[100px] text-gray-200 w-full max-w-[950px] mx-auto flex flex-col px-4"
+            className="py-[100px] w-full max-w-[950px] mx-auto flex flex-col px-4"
             initial="hidden"
             animate={controls}
             variants={list}
             ref={ref}
         >
             <motion.div
-                className="name text-7xl sm:text-8xl flex text-gray-100 font-bold"
+                className="name text-7xl sm:text-8xl flex font-bold"
                 variants={itemY}
             >
                 <h1>
                     {["A", "b", "o", "u", "t"].map((letter, index) => {
                         return (
                             <span
-                                className="text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
+                                className="transparent-text text-4xl mb-[40px] duration-300 inline-block align-top hover:text-red-500 border-b-[2px] border-red-500"
                                 key={index}
                             >
                                 {letter}

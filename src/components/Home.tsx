@@ -70,15 +70,24 @@ const Home = () => {
             variants={list}
             ref={ref}
         >
+            {/* <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                variants={item}
+            >
+                <p>ETHAN NG</p>
+            </motion.div> */}
             <div className="max-w-[473.9px] max-h-[473.89px] mr-[100px]">
                 <motion.div
-                    className="font-code flex text-gray-100 text-xl max-w-[181.4px]"
+                    className="font-code flex text-xl max-w-[181.4px]"
                     variants={item}
                 >
-                    <span>👋 Hi there, I&apos;m</span>
+                    <span className="whitespace-nowrap">
+                        👋 Hi there, I&apos;m
+                    </span>
                 </motion.div>
                 <motion.div
-                    className="name text-7xl sm:text-8xl flex text-gray-100 font-bold my-4 max-w-[425.2px]"
+                    className="name text-7xl sm:text-8xl flex font-bold my-4 max-w-[425.2px]"
                     variants={item}
                 >
                     <h1>
@@ -86,7 +95,7 @@ const Home = () => {
                             (letter, index) => {
                                 return (
                                     <span
-                                        className="duration-300 inline align-top hover:text-red-500"
+                                        className="transparent-text duration-300 inline align-top hover:text-red-500"
                                         key={index}
                                     >
                                         {letter}
@@ -102,14 +111,14 @@ const Home = () => {
                 >
                     <h2
                         id="titles"
-                        className="fade-in-out text-[52px]"
+                        className="fade-in-out whitespace-nowrap text-[52px]"
                         ref={animationEl}
                     >
                         {text[articleIndex]}
                     </h2>
                 </motion.div>
                 <motion.p
-                    className="text-gray-200 my-2 max-w-[500px] text-lg"
+                    className="my-2 max-w-[500px] text-lg"
                     variants={item}
                 >
                     I&apos;m a software engineer who is passionate about
